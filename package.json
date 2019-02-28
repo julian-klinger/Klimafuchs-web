@@ -9,17 +9,21 @@
     "gatsby-image": "^2.0.30",
     "gatsby-plugin-manifest": "^2.0.20",
     "gatsby-plugin-offline": "^2.0.24",
+    "gatsby-plugin-postcss": "^2.0.5",
     "gatsby-plugin-react-helmet": "^3.0.7",
     "gatsby-plugin-sharp": "^2.0.23",
     "gatsby-source-filesystem": "^2.0.23",
     "gatsby-transformer-sharp": "^2.1.14",
     "prop-types": "^15.7.2",
     "react": "^16.8.3",
+    "react-collapse": "^4.0.3",
     "react-dom": "^16.8.3",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-motion": "^0.5.2"
   },
   "devDependencies": {
-    "prettier": "^1.16.4"
+    "prettier": "^1.16.4",
+    "tailwindcss": "^0.7.4"
   },
   "keywords": [
     "gatsby"

@@ -83,8 +83,8 @@ let colors = {
   'green-darkest': '#0f2f21',
   'green-darker': '#1a4731',
   'green-dark': '#1f9d55',
-  'green': '#A4D13A',
-  'green-light': '#51d88a',
+  'green': '#ABD100',
+  'green-light': '#ABD159',
   'green-lighter': '#a2f5bf',
   'green-lightest': '#e3fcec',
 
@@ -99,7 +99,7 @@ let colors = {
   'blue-darkest': '#12283a',
   'blue-darker': '#1c3d5a',
   'blue-dark': '#2779bd',
-  'blue': '#3490dc',
+  'blue': '#8DC3DB',
   'blue-light': '#6cb2eb',
   'blue-lighter': '#bcdefa',
   'blue-lightest': '#eff8ff',
@@ -195,11 +195,11 @@ module.exports = {
 
   fonts: {
     'sans': [
+      'Roboto',
       'system-ui',
       'BlinkMacSystemFont',
       '-apple-system',
       'Segoe UI',
-      'Roboto',
       'Oxygen',
       'Ubuntu',
       'Cantarell',
@@ -261,6 +261,7 @@ module.exports = {
     '3xl': '1.875rem',  // 30px
     '4xl': '2.25rem',   // 36px
     '5xl': '3rem',      // 48px
+    '6xl': '3.5rem',      // 48px
   },
 
 
@@ -592,6 +593,8 @@ module.exports = {
     '0': '0',
     'full': '100%',
     'screen': '100vh',
+    'screen-third': '30vh',
+    'screen-half': '50vh',
   },
 
 

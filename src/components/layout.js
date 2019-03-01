@@ -25,15 +25,17 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <div className="bg-green min-h-screen flex flex-col h-full">
+      <div className="bg-green min-h-screen flex flex-col h-full font-sans">
 
         <Header siteTitle={data.site.siteMetadata.title} />
 
-        <main className="flex-1 p-5 h-screen-half">
-          {children}
-        </main>
+        <div className="flex-1" >
+          <main className="mx-auto" >
+            {children}
+          </main>
+        </div>
 
-        <footer className="bg-red pin-b p-10">
+        <footer className="min-h-screen-third bg-green-light p-10 z-10">
           <Link to="/page-4/">impressum</Link>
         </footer>
 

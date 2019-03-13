@@ -7,8 +7,10 @@ import SEO from "../components/seo"
 const SecondPage = () => (
   <Layout>
     <SEO title="Impressum" />
-    <div>Impressum </div>
-    <Link to="/">Go back to the homepage</Link>
+    <div className="container mx-auto">
+      <h1 className="text-white text-3xl">Impressum</h1>
+      <Link to="/">Go back to the homepage</Link>
+    </div>
   </Layout>
 )
 

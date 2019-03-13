@@ -36,7 +36,7 @@ const Layout = ({ children }) => (
         </div>
 
         <footer className="min-h-screen-third bg-green-light p-10 z-10">
-          <Link to="/page-4/">impressum</Link>
+          <Link to="/imprint">impressum</Link>
         </footer>
 
       </div>

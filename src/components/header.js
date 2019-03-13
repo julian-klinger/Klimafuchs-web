@@ -17,10 +17,13 @@ const Header = ({ siteTitle }) => {
 
         <div className="">
           <div className="text-sm ">
-            <Link to="page-2" href="#responsive-header" className="sm:text-sm md:text-base font-thin no-underline text-white mt-4 hover:text-blue mr-4">
+            <Link to="/wiki-link" href="#responsive-header" className="sm:text-sm md:text-base font-thin no-underline text-white mt-4 hover:text-blue mr-4">
+              Mach mit!
+            </Link>
+            <Link to="/faq" href="#responsive-header" className="sm:text-sm md:text-base font-thin no-underline text-white mt-4 hover:text-blue mr-4">
               FAQs
             </Link>
-            <Link to="page-3" href="#responsive-header" className="sm:text-sm md:text-base font-thin no-underline text-white mt-4 hover:text-blue mr-4">
+            <Link to="/about" href="#responsive-header" className="sm:text-sm md:text-base font-thin no-underline text-white mt-4 hover:text-blue mr-4">
               Über uns
             </Link>
           </div>

@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
@@ -8,40 +7,61 @@ import imageApp2 from "../images/app-dummy-2.png"
 import imageApp3 from "../images/app-dummy-3.png"
 import imageAppstore from "../images/appstore-badge.png"
 import imagePlaystore from "../images/playstore-badge.png"
-
 import Slider from "react-slick";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleLeft } from '@fortawesome/free-solid-svg-icons'
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
+
+function SampleNextArrow(props) {
+  const { onClick } = props;
+  return (
+
+    <FontAwesomeIcon
+      onClick={onClick}
+      icon={faAngleRight}
+      className="text-white text-4xl">>
+    </FontAwesomeIcon>
+
+  );
+}
+
+const SamplePrevArrow = (props) => {
+  const { onClick } = props;
+  return (
+    <FontAwesomeIcon
+      onClick={onClick}
+      icon={faAngleLeft}
+      className="text-white text-4xl">
+    </FontAwesomeIcon>
+  );
+}
 
 class CenterMode extends Component {
   render() {
     const settings = {
       className: "center",
-      centerMode: true,
       infinite: true,
-      centerPadding: "60px",
+      centerMode: true,
+      centerPadding: 0,
       slidesToShow: 3,
-      speed: 500
+      speed: 700,
+      prevArrow: <SamplePrevArrow />,
+      nextArrow: <SampleNextArrow />,
     };
     return (
       <div>
-        <h2>Center Mode</h2>
         <Slider {...settings}>
-          <div className="bg-red">
-            <h3>1</h3>
+          <div className="">
+            <img src={imageApp1} />
           </div>
-          <div className="bg-red">
-            <h3>2</h3>
+          <div className="">
+            <img src={imageApp2} />
           </div>
-          <div className="bg-red">
-            <h3>3</h3>
+          <div className="">
+            <img src={imageApp3} />
           </div>
-          <div className="bg-red">
-            <h3>4</h3>
-          </div>
-          <div className="bg-red">
-            <h3>5</h3>
-          </div>
-          <div className="bg-red">
-            <h3>6</h3>
+          <div className="">
+            <img src={imageApp3} />
           </div>
         </Slider>
       </div>
@@ -63,10 +83,11 @@ const IndexPage = () => (
           <img className="ml-auto sm:w-1/2 p-2" src={imageAppstore} />
           <img className="mr-auto sm:w-1/2 p-2" src={imagePlaystore} />
         </div>
-        <div className="mx-auto pb-32">
-          <CenterMode />
-        </div>
       </div>
+    </div>
+    <div className="mx-auto w-3/5 pb-32 pt-16">
+      {/* <img src={imageApp1} /> */}
+      <CenterMode />
     </div>
 
     <div className="flex flex-col bg-blue min-h-screen-half">

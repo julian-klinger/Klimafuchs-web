@@ -1,49 +1,54 @@
-
-
 @tailwind preflight;
-
 @tailwind components;
-
 @tailwind utilities;
-
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
-.slick-slide:not(.slick-center) {
-  transform: scale(.7);
-  opacity: .4;
-}
+/* Skewed Background-Transition */
 
-
-.skewed-bg{
+.skewed-bg {
   transform: skewY(-3deg);
-  z-index: 0;
   margin-top: -80px;
 }
 
-.slider {
-  /* line them up horizontally */
-  display: flex;
+/* Carousel customization  */
 
-  /* allow for scrolling */
-  overflow-x: auto;
-
-  /* make it smooth on iOS */
-  -webkit-overflow-scrolling: touch;
-}
-.slider > div {
-  /* make sure the width is honored */
-  flex-shrink: 0;
-  width: 300px !important;
+.slick-slide:not(.slick-center) {
+  transform: scale(.6);
+  opacity: .4;
+  transition: .6s ease-in;
 }
 
+.slick-center {
+  transition: .6s ease-in;
+}
 
+.slick-slider * {
+  outline: none;
+  z-index: 1;
+}
 
-/**
-* ----------------------------------------------
-* Accordion styles
-* ----------------------------------------------
-**/
+.fa-angle-left {
+  position: absolute;
+  top: 50%;
+  left: -20px;
+}
+
+.fa-angle-right {
+  position: absolute;
+  top: 50%;
+  right: -20px;
+}
+
+.fa-angle-left:hover {
+  cursor: pointer;
+}
+
+.fa-angle-right:hover {
+  cursor: pointer;
+}
+
+/* Accordion styles */
 
 .u-position-absolute {
   position: absolute;
@@ -58,7 +63,7 @@
 }
 
 .accordion__title {
-  background-color: rgba(141,195,219, 1);
+  background-color: rgba(141, 195, 219, 1);
   color: #ffffff;
   cursor: pointer;
   padding: 1em;
@@ -72,7 +77,7 @@
 }
 
 .accordion__body {
-  background-color: rgba(141,195,219, .6);
+  background-color: rgba(141, 195, 219, .6);
   color: #ffffff;
   padding: 1em;
   display: block;
@@ -85,8 +90,7 @@
   animation: fadein 0.35s ease-in;
 }
 
-.accordion__title > *:last-child,
-.accordion__body > *:last-child {
+.accordion__title>*:last-child, .accordion__body>*:last-child {
   margin-bottom: 0;
 }
 
@@ -101,8 +105,7 @@
   margin-top: -6px;
 }
 
-.accordion__arrow::after,
-.accordion__arrow::before {
+.accordion__arrow::after, .accordion__arrow::before {
   display: block;
   position: absolute;
   top: 50%;
@@ -130,58 +133,58 @@
   transform: rotate(45deg);
 }
 
-.accordion__arrow::before,
-.accordion__arrow::after {
+.accordion__arrow::before, .accordion__arrow::after {
   transition: transform 0.25s ease, -webkit-transform 0.25s ease;
 }
 
 /* -------------------------------------------------- */
+
 /* ---------------- Animation part ------------------ */
+
 /* -------------------------------------------------- */
 
 @keyframes fadein {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
-
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
 @keyframes move-down {
   0% {
-      transform: translateY(0);
+    transform: translateY(0);
   }
   10% {
-      transform: translateY(0);
+    transform: translateY(0);
   }
   20% {
-      transform: translateY(5px);
+    transform: translateY(5px);
   }
   30% {
-      transform: translateY(0);
+    transform: translateY(0);
   }
   100% {
-      transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
 @keyframes move-up {
   0% {
-      transform: translateY(0);
+    transform: translateY(0);
   }
   10% {
-      transform: translateY(0);
+    transform: translateY(0);
   }
   20% {
-      transform: translateY(-5px);
+    transform: translateY(-5px);
   }
   30% {
-      transform: translateY(0);
+    transform: translateY(0);
   }
   100% {
-      transform: translateY(0);
+    transform: translateY(0);
   }
 }
 

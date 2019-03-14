@@ -11,7 +11,7 @@ const Header = ({ siteTitle }) => {
       <nav className="flex items-center justify-between flex-wrap">
 
         <div className="flex items-center flex-no-shrink text-white mr-6">
-          <img className="w-8 sm:w-12 md:w-16 " src={logo} />
+          <img alt="Klimafuchs-Logo" className="w-8 sm:w-12 md:w-16 " src={logo} />
           <Link className="pl-2 no-underline font-bold sm:text-xl lg:text-4xl tracking-tight text-white" to="/" >{siteTitle}</Link>
         </div>
 

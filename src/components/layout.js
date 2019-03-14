@@ -9,8 +9,10 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import { Link } from "gatsby"
+import logo from "../images/klimafuchs-logo.png"
 
 import Header from "./header"
+import Footer from "./footer"
 import '../css/global.css'
 
 const Layout = ({ children }) => (
@@ -35,9 +37,7 @@ const Layout = ({ children }) => (
           </main>
         </div>
 
-        <footer className="min-h-screen-third bg-green-light p-10 z-10">
-          <Link to="/imprint">impressum</Link>
-        </footer>
+        <Footer />
 
       </div>
     )}

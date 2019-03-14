@@ -22,16 +22,17 @@ class Faq extends React.Component {
       <Layout>
         <SEO title="Impressum" />
         <div className="container mx-auto">
-          <h1 className="text-white text-3xl">FAQ</h1>
+          <h1 className="text-white  text-center text-3xl">FAQ</h1>
 
           <div className="py-4">
             <Accordion accordion={false}>
               <AccordionItem>
                 <AccordionItemTitle>
                   <h3>Was kann ich bei Klimafuchs machen?</h3>
+                  <div className="accordion__arrow" role="presentation" />
                 </AccordionItemTitle>
                 <AccordionItemBody>
-                  <p>Wer steckt dahinter?</p>
+                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,</p>
                 </AccordionItemBody>
               </AccordionItem>
               <AccordionItem>
@@ -39,23 +40,15 @@ class Faq extends React.Component {
                   <h3>Eine andere interessante Frage</h3>
                 </AccordionItemTitle>
                 <AccordionItemBody>
-                  <p>Body content</p>
+                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,</p>
                 </AccordionItemBody>
               </AccordionItem>
               <AccordionItem>
                 <AccordionItemTitle>
-                  <h3>Wer steckt dahinter?</h3>
+                  <h3>Some question</h3>
                 </AccordionItemTitle>
                 <AccordionItemBody>
-                  <p>Body content</p>
-                </AccordionItemBody>
-              </AccordionItem>
-              <AccordionItem>
-                <AccordionItemTitle>
-                  <h3>Simple title</h3>
-                </AccordionItemTitle>
-                <AccordionItemBody>
-                  <p>Body content</p>
+                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,</p>
                 </AccordionItemBody>
               </AccordionItem>
               <AccordionItem>
@@ -63,7 +56,15 @@ class Faq extends React.Component {
                   <h3>Simple title</h3>
                 </AccordionItemTitle>
                 <AccordionItemBody>
-                  <p>Body content</p>
+                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,</p>
+                </AccordionItemBody>
+              </AccordionItem>
+              <AccordionItem>
+                <AccordionItemTitle>
+                  <h3>Simple title</h3>
+                </AccordionItemTitle>
+                <AccordionItemBody>
+                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,</p>
                 </AccordionItemBody>
               </AccordionItem>
               <AccordionItem>
@@ -71,13 +72,12 @@ class Faq extends React.Component {
                   <h3>Complex title</h3>
                 </AccordionItemTitle>
                 <AccordionItemBody>
-                  <p>Body content</p>
+                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,</p>
                 </AccordionItemBody>
               </AccordionItem>
             </Accordion>
           </div>
 
-          <Link className="text-white" to="/">Zurück</Link>
         </div>
       </Layout>
     )

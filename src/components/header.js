@@ -10,20 +10,20 @@ const Header = ({ siteTitle }) => {
 
       <nav className="flex items-center justify-between flex-wrap">
 
-        <div className="flex items-center flex-no-shrink text-white mr-6">
+        <div className="flex items-center flex-no-shrink mr-6">
           <img alt="Klimafuchs-Logo" className="w-8 sm:w-12 md:w-16 " src={logo} />
           <Link className="pl-2 no-underline font-bold sm:text-xl lg:text-4xl tracking-tight text-white" to="/" >{siteTitle}</Link>
         </div>
 
         <div className="">
           <div className="text-sm ">
-            <Link to="/wiki-link" href="#responsive-header" className="sm:text-sm md:text-base font-light no-underline text-white mt-4 hover:bg-white hover:text-green p-2 mr-4">
+            <Link to="/wiki-link" href="#responsive-header" className="sm:text-sm md:text-base font-light no-underline mt-4 hover:bg-white hover:text-green p-2 mr-4">
               Mach mit!
             </Link>
-            <Link to="/faq" href="#responsive-header" className="sm:text-sm md:text-base font-light no-underline text-white mt-4 hover:bg-white hover:text-green p-2 mr-4">
+            <Link to="/faq" href="#responsive-header" className="sm:text-sm md:text-base font-light no-underline mt-4 hover:bg-white hover:text-green p-2 mr-4">
               FAQs
             </Link>
-            <Link to="/about" href="#responsive-header" className="sm:text-sm md:text-base font-light no-underline text-white mt-4 hover:bg-white hover:text-green p-2 mr-4">
+            <Link to="/about" href="#responsive-header" className="sm:text-sm md:text-base font-light no-underline mt-4 hover:bg-white hover:text-green p-2 mr-4">
               Über uns
             </Link>
           </div>

@@ -14,7 +14,7 @@ function SampleNextArrow(props) {
     <FontAwesomeIcon
       onClick={onClick}
       icon={faAngleRight}
-      className="text-white hover:text-blue text-shadow text-3xl md:text-6xl">>
+      className="hover:text-blue text-shadow text-3xl md:text-6xl">>
     </FontAwesomeIcon>
 
   );
@@ -26,7 +26,7 @@ const SamplePrevArrow = (props) => {
     <FontAwesomeIcon
       onClick={onClick}
       icon={faAngleLeft}
-      className="text-white hover:text-blue text-shadow text-3xl md:text-6xl">
+      className="hover:text-blue text-shadow text-3xl md:text-6xl">
     </FontAwesomeIcon>
   );
 }

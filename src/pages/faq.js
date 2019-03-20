@@ -20,6 +20,10 @@ class Faq extends React.Component {
 
           <Accordion />
 
+
+        </div>
+        <div className="container mx-auto py-5">
+          <Link to="/">Zurück</Link>
         </div>
       </Layout>
     )

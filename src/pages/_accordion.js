@@ -20,14 +20,14 @@ export class Accordion extends Component {
 
         <div>
           <div className="flex justify-between accordion-title" onClick={() => this.onToggle(1)}>
-            <div className="block">Bla bla question about Klimafuchs</div>
+            <div className="block">Was ist Klimafuchs?</div>
             <div className="block">
               {this.state.index !== 1 ? <FontAwesomeIcon className="icon-collapsed" icon={faAngleDown} /> : <FontAwesomeIcon className="icon-expanded" icon={faAngleUp} />}
             </div>
           </div>
           <Collapse
             className="collapse"
-            transition="height 300ms cubic-bezier(.4, 0, .2, 1)"
+            transition="height 300ms"
             isOpen={this.state.index === 1}
             onChange={({ collapseState }) => {
               this.setState({ item1: collapseState });
@@ -36,13 +36,13 @@ export class Accordion extends Component {
               this.setState({ item1: collapseState });
             }}
           >
-            <p className="body-transition">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single </p>
+            <p className="accordion-body">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single </p>
           </Collapse>
         </div>
 
         <div>
           <div className="flex justify-between accordion-title" onClick={() => this.onToggle(2)}>
-            <div className="block">Bla bla question about Klimafuchs</div>
+            <div className="block">Wie kann ich mitmachen?</div>
             <div className="block">
               {this.state.index !== 2 ? <FontAwesomeIcon className="icon-collapsed" icon={faAngleDown} /> : <FontAwesomeIcon className="icon-expanded" icon={faAngleUp} />}
             </div>
@@ -58,13 +58,13 @@ export class Accordion extends Component {
               this.setState({ item2: collapseState });
             }}
           >
-            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single </p>
+            <p className="accordion-body">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single </p>
           </Collapse>
         </div>
 
         <div>
           <div className="flex justify-between accordion-title" onClick={() => this.onToggle(3)}>
-            <div className="block">Bla bla question about Klimafuchs</div>
+            <div className="block">Überprüft jemand, ob ich Challenges tatsächlich erfüllt habe?</div>
             <div className="block">
               {this.state.index !== 3 ? <FontAwesomeIcon className="icon-collapsed" icon={faAngleDown} /> : <FontAwesomeIcon className="icon-expanded" icon={faAngleUp} />}
             </div>
@@ -80,9 +80,54 @@ export class Accordion extends Component {
               this.setState({ item3: collapseState });
             }}
           >
-            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single </p>
+            <p className="accordion-body">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single </p>
           </Collapse>
         </div>
+
+        <div>
+          <div className="flex justify-between accordion-title" onClick={() => this.onToggle(4)}>
+            <div className="block">Wer steckt dahinter?</div>
+            <div className="block">
+              {this.state.index !== 4 ? <FontAwesomeIcon className="icon-collapsed" icon={faAngleDown} /> : <FontAwesomeIcon className="icon-expanded" icon={faAngleUp} />}
+            </div>
+          </div>
+          <Collapse
+            className="collapse"
+            transition="height 300ms cubic-bezier(.4, 0, .2, 1)"
+            isOpen={this.state.index === 4}
+            onChange={({ collapseState }) => {
+              this.setState({ item4: collapseState });
+            }}
+            onInit={({ collapseState }) => {
+              this.setState({ item4: collapseState });
+            }}
+          >
+            <p className="accordion-body">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single </p>
+          </Collapse>
+        </div>
+
+        <div>
+          <div className="flex justify-between accordion-title" onClick={() => this.onToggle(5)}>
+            <div className="block">Was passiert mit meinen Daten?</div>
+            <div className="block">
+              {this.state.index !== 5 ? <FontAwesomeIcon className="icon-collapsed" icon={faAngleDown} /> : <FontAwesomeIcon className="icon-expanded" icon={faAngleUp} />}
+            </div>
+          </div>
+          <Collapse
+            className="collapse"
+            transition="height 300ms cubic-bezier(.4, 0, .2, 1)"
+            isOpen={this.state.index === 5}
+            onChange={({ collapseState }) => {
+              this.setState({ item5: collapseState });
+            }}
+            onInit={({ collapseState }) => {
+              this.setState({ item5: collapseState });
+            }}
+          >
+            <p className="accordion-body">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single </p>
+          </Collapse>
+        </div>
+
       </div>
     );
   }

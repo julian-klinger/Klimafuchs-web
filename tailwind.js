@@ -548,6 +548,7 @@ module.exports = {
     '64': '16rem',
     'full': '100%',
     'screen': '100vh',
+    'screen-3/4': '75vh',
     'screen-half': '50vh',
     'screen-quarter': '25vh',
   },
@@ -570,6 +571,8 @@ module.exports = {
 
   minWidth: {
     '0': '0',
+    'half': '50%',
+    '3/4': '75%',
     'full': '100%',
   },
 
@@ -595,6 +598,8 @@ module.exports = {
     'screen': '100vh',
     'screen-third': '30vh',
     'screen-half': '50vh',
+    'screen-3/4': '75vh',
+
   },
 
 

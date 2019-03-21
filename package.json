@@ -11,6 +11,7 @@
     "@fortawesome/react-fontawesome": "^0.1.4",
     "@kunukn/react-collapse": "^2.0.10",
     "gatsby": "^2.1.19",
+    "gatsby-background-image": "^0.2.73",
     "gatsby-image": "^2.0.30",
     "gatsby-plugin-manifest": "^2.0.20",
     "gatsby-plugin-offline": "^2.0.24",

@@ -100,7 +100,10 @@ const SecondPage = () => (
         <p>Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail oder wenden Sie sich direkt an die für den Datenschutz verantwortliche Person in unserer Organisation:</p>
         <p>info@enviroommate.org</p>
         <p><em>Die Datenschutzerklärung wurde mit dem </em><em><a href="https://www.activemind.de/datenschutz/datenschutzhinweis-generator/" target="_blank" rel="noopener noreferrer">Datenschutzerklärungs-Generator der activeMind AG erstellt</a> (Version 2018-06-15).</em></p>
-        <Link to="/">Zurück</Link>
+        
+        <div className="pt-10 pb-24">
+          <Link to="/">Zurück</Link>
+        </div>
       </div>
     </div>
   </Layout>

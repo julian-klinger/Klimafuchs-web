@@ -128,6 +128,72 @@ export class Accordion extends Component {
           </Collapse>
         </div>
 
+        <div>
+          <div className="flex justify-between accordion-title" onClick={() => this.onToggle(6)}>
+            <div className="block">Wo kommen die Challenges her?</div>
+            <div className="block">
+              {this.state.index !== 6 ? <FontAwesomeIcon className="icon-collapsed" icon={faAngleDown} /> : <FontAwesomeIcon className="icon-expanded" icon={faAngleUp} />}
+            </div>
+          </div>
+          <Collapse
+            className="collapse"
+            transition="height 300ms cubic-bezier(.4, 0, .2, 1)"
+            isOpen={this.state.index === 6}
+            onChange={({ collapseState }) => {
+              this.setState({ item6: collapseState });
+            }}
+            onInit={({ collapseState }) => {
+              this.setState({ item6: collapseState });
+            }}
+          >
+            <p className="accordion-body">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single </p>
+          </Collapse>
+        </div>
+
+        <div>
+          <div className="flex justify-between accordion-title" onClick={() => this.onToggle(7)}>
+            <div className="block">Wie lange dauert eine Season?</div>
+            <div className="block">
+              {this.state.index !== 7 ? <FontAwesomeIcon className="icon-collapsed" icon={faAngleDown} /> : <FontAwesomeIcon className="icon-expanded" icon={faAngleUp} />}
+            </div>
+          </div>
+          <Collapse
+            className="collapse"
+            transition="height 300ms cubic-bezier(.4, 0, .2, 1)"
+            isOpen={this.state.index === 7}
+            onChange={({ collapseState }) => {
+              this.setState({ item7: collapseState });
+            }}
+            onInit={({ collapseState }) => {
+              this.setState({ item7: collapseState });
+            }}
+          >
+            <p className="accordion-body">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single </p>
+          </Collapse>
+        </div>
+
+        <div>
+          <div className="flex justify-between accordion-title" onClick={() => this.onToggle(8)}>
+            <div className="block">Wie kann ich mit meinen Freunden spielen?</div>
+            <div className="block">
+              {this.state.index !== 8 ? <FontAwesomeIcon className="icon-collapsed" icon={faAngleDown} /> : <FontAwesomeIcon className="icon-expanded" icon={faAngleUp} />}
+            </div>
+          </div>
+          <Collapse
+            className="collapse"
+            transition="height 300ms cubic-bezier(.4, 0, .2, 1)"
+            isOpen={this.state.index === 8}
+            onChange={({ collapseState }) => {
+              this.setState({ item8: collapseState });
+            }}
+            onInit={({ collapseState }) => {
+              this.setState({ item8: collapseState });
+            }}
+          >
+            <p className="accordion-body">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single </p>
+          </Collapse>
+        </div>
+
       </div>
     );
   }

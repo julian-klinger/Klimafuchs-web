@@ -11,17 +11,28 @@ a {
   color: white;
 }
 
-h1, h2, h3 {
-  margin-bottom: .2rem;
-  margin-top: .3rem;
+h1 {
+  @apply .mt-8 mb-3;
+}
+
+h2 {
+  @apply .mt-10 mb-3;
+}
+
+h3 {
+  @apply .mt-1 mb-1;
 }
 
 p {
-  margin-bottom: .5rem;
+  margin-bottom: 1rem;
 }
 
 .text {
   @apply .font-light .text-center .text-lg;
+}
+
+.container {
+  @apply px-6;
 }
 
 .footer {
@@ -53,10 +64,6 @@ p {
 ::-webkit-scrollbar-thumb {
   background: rgba(141, 195, 219, 1);
   border-radius: 2px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #ABD100;
 }
 
 /* Carousel customization  */
@@ -109,13 +116,16 @@ p {
 }
 
 .accordion-title {
-  @apply .text-white .text-base .font-medium .py-3 .px-4 .shadow .bg-green-light .my-1;
+  @apply .text-white .text-lg .font-medium .py-4 .px-4 .shadow .my-2;
+  background: rgba(255, 255, 255, .1);
   outline: none !important;
   cursor: pointer;
 }
 
 .accordion-body {
-  @apply .px-4 .py-2 .font-light;
+  @apply .p-4 .font-light;
+
+  background: rgba(255, 255, 255, .1);
 }
 
 .icon-expanded {

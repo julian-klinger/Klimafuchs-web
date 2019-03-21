@@ -14,15 +14,17 @@ class Faq extends React.Component {
   render() {
     return (
       <Layout>
-        <SEO title="Impressum" />
+        <SEO title="FAQ" />
         <div className="container mx-auto">
-          <h1 className="text-3xl">FAQ</h1>
+          <h1 className="text-3xl">FAQ - Häufig gestellte Fragen</h1>
+
+          <p className="text-thin text-base py-3">Du hast eine Frage, die hier nicht auftaucht? Dann schreib uns einfach an <a href="mailto:info@klimafuchs.org">info@klimafuchs.org</a>. Wir freuen uns auf Deine Nachricht. </p>
 
           <Accordion />
 
 
         </div>
-        <div className="container mx-auto py-5">
+        <div className="container mx-auto pt-10 pb-24">
           <Link to="/">Zurück</Link>
         </div>
       </Layout>

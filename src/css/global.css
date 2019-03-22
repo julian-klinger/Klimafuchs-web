@@ -35,6 +35,16 @@ p {
   @apply px-6;
 }
 
+.appstore-link:hover {
+  transform: scale(1.05);
+  transition: .2s ease-in-out;
+}
+
+.appstore-link {
+  transform: scale(1);
+  transition: .2s ease-in-out;
+}
+
 .footer {
   background: linear-gradient(to right, rgba(171, 209, 0, .6), rgba(171, 209, 0, 1)), url(../images/footer-bg.png) no-repeat top left fixed;
   -webkit-background-size: cover;

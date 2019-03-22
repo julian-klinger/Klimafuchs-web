@@ -17,10 +17,10 @@ const IndexPage = () => (
         <h2 className="text text-base lg:text-xl p-5">Mit der Klimafuchs-App bekommst du jede Woche vier Klima-Challenges, die dir helfen deinen CO2-Fußabdruck zu reduzieren. Vergleiche dich mit deinen Freunden in Teams werde der beste Klimafuchs!</h2>
         <div className="flex-wrap w-1/2 md:w-1/3 md:mt-6 mx-auto pb-12">
           <a href="https://www.apple.com/de/ios/app-store/" target="_blank" rel="noopener noreferrer">
-            <img alt="Appstore Badge" className="ml-auto sm:w-1/2 p-2" src={imageAppstore} />
+            <img alt="Appstore Badge" className="appstore-link ml-auto sm:w-1/2 p-2" src={imageAppstore} />
           </a>
           <a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer">
-            <img alt="Playstore Badge" className="mr-auto sm:w-1/2 p-2" src={imagePlaystore} />
+            <img alt="Playstore Badge" className="appstore-link mr-auto sm:w-1/2 p-2" src={imagePlaystore} />
           </a>
         </div>
       </div>

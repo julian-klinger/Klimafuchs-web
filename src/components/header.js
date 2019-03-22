@@ -19,27 +19,27 @@ const Header = ({ siteTitle }) => {
         <div className="w-1/2">
 
           <div className="flex items-center md:hidden">
-            <img alt="Klimafuchs-Logo" className="w-8 sm:w-12 md:w-16 " src={logo} />
-            <AniLink fade to="/" className="pl-2 no-underline font-bold sm:text-xl lg:text-4xl tracking-tight text-white" >{siteTitle}</AniLink>
+            <img alt="Klimafuchs-Logo" className="w-12 md:w-16 " src={logo} />
+            <AniLink fade to="/" className="pl-2 no-underline font-bold text-2xl lg:text-4xl tracking-tight text-white" >{siteTitle}</AniLink>
           </div>
         </div>
 
         <ResponsiveMenu
-          menuOpenButton={<FontAwesomeIcon className="text-3xl text-right hover:shadow" icon={faBars} />}
-          menuCloseButton={<FontAwesomeIcon className="text-3xl text-right hover:shadow" icon={faBars} />}
+          menuOpenButton={<FontAwesomeIcon className="text-3xl text-right" icon={faBars} />}
+          menuCloseButton={<FontAwesomeIcon className="text-3xl text-right" icon={faBars} />}
           changeMenuOn="768px"
           largeMenuClassName="large-menu-classname"
-          smallMenuClassName="text-right"
+          smallMenuClassName="text-right p-1 hover:shadow-lg"
           menu={
-            <div className="md:flex md:flex-wrap md:flex-no-wrap items-center flex-no-shrink">
+            <div className="responsive-menu md:flex md:flex-wrap md:flex-no-wrap items-center flex-no-shrink">
 
               <img alt="Klimafuchs-Logo" className="hidden md:block w-8 sm:w-12 md:w-16 " src={logo} />
-              <AniLink fade to="/" className="hidden md:block pl-2 no-underline font-bold sm:text-xl lg:text-4xl tracking-tight text-white" >{siteTitle}</AniLink>
+              <AniLink fade to="/" className="hidden md:block pl-2 no-underline font-bold text-2xl lg:text-4xl tracking-tight text-white" >{siteTitle}</AniLink>
 
-              <AniLink fade to="/" activeClassName="bg-white text-green" className="ml-auto w-full block md:w-auto sm:text-sm block md:inline md:text-base font-light no-underline hover:bg-white hover:text-green p-2 md:mr-4 mt-3 md:mt-0">
+              <AniLink fade to="/" activeClassName="bg-white text-green" className="ml-auto w-full block md:w-auto sm:text-sm block md:inline md:text-base font-light no-underline hover:bg-white hover:text-green p-2 md:mr-4 md:mt-0">
                 Home
                 </AniLink>
-              <AniLink fade to="up" to="/wiki-link" activeClassName="bg-white text-green" className="w-full block md:w-auto sm:text-sm block md:inline md:text-base font-light no-underline hover:bg-white hover:text-green p-2 md:mr-4 mt-3 md:mt-0">
+              <AniLink fade to="up" to="/wiki-link" activeClassName="bg-white text-green" className="w-full block md:w-auto sm:text-sm block md:inline md:text-base font-light no-underline hover:bg-white hover:text-green p-2 md:mr-4 ">
                 Mach mit!
                 </AniLink>
               <AniLink fade to="/faq" activeClassName="bg-white text-green" className="w-full block md:w-auto sm:text-sm block md:inline md:text-base font-light no-underline hover:bg-white hover:text-green p-2 md:mr-4">

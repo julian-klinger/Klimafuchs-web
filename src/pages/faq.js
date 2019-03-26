@@ -18,7 +18,7 @@ class Faq extends React.Component {
         <div className="container mx-auto">
           <h1 className="text-3xl">FAQ - Häufig gestellte Fragen</h1>
 
-          <p className="text-thin text-base py-3">Du hast eine Frage, die hier nicht auftaucht? Dann schreib uns einfach an <a href="mailto:info@klimafuchs.org">info@klimafuchs.org</a>. Wir freuen uns auf Deine Nachricht. </p>
+          <p className="content-text py-3">Du hast eine Frage, die hier nicht auftaucht? Dann schreib uns einfach an <a href="mailto:info@klimafuchs.org">info@klimafuchs.org</a>. Wir freuen uns auf Deine Nachricht. </p>
 
           <Accordion />
 

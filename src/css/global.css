@@ -9,6 +9,10 @@ html {
 
 a {
   color: white;
+  @apply .no-underline .font-light;
+}
+a:hover {
+  @apply .underline;
 }
 
 h1 {
@@ -29,6 +33,10 @@ p {
 
 .text {
   @apply .font-light .text-center .text-lg;
+}
+
+.content-text {
+  @apply .font-thin .text-lg
 }
 
 .container {
@@ -143,7 +151,7 @@ p {
 }
 
 .accordion-body {
-  @apply .p-4 .font-light;
+  @apply .p-4 .font-light .text-lg;
   background: rgba(255, 255, 255, .1);
 }
 

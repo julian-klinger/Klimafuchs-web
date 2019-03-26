@@ -20,7 +20,7 @@ const Header = ({ siteTitle }) => {
 
           <div className="flex items-center md:hidden">
             <img alt="Klimafuchs-Logo" className="w-12 md:w-16 " src={logo} />
-            <AniLink fade to="/" className="pl-2 no-underline font-bold text-2xl lg:text-4xl tracking-tight text-white" >{siteTitle}</AniLink>
+            <AniLink fade to="/" className="pl-2 hover:no-underline font-bold text-2xl lg:text-4xl tracking-tight text-white" >{siteTitle}</AniLink>
           </div>
         </div>
 
@@ -34,18 +34,18 @@ const Header = ({ siteTitle }) => {
             <div className="responsive-menu md:flex md:flex-wrap md:flex-no-wrap items-center flex-no-shrink">
 
               <img alt="Klimafuchs-Logo" className="hidden md:block w-8 sm:w-12 md:w-16 " src={logo} />
-              <AniLink fade to="/" className="hidden md:block pl-2 no-underline font-bold text-2xl lg:text-4xl tracking-tight text-white" >{siteTitle}</AniLink>
+              <AniLink fade to="/" className="hidden md:block pl-2 hover:no-underline font-bold text-2xl lg:text-4xl tracking-tight text-white" >{siteTitle}</AniLink>
 
-              <AniLink fade to="/" activeClassName="bg-white text-green" className="ml-auto w-full block md:w-auto sm:text-sm block md:inline md:text-base font-light no-underline hover:bg-white hover:text-green p-2 md:mr-4 md:mt-0">
+              <AniLink fade to="/" activeClassName="font-normal shadow bg-white text-green" className="ml-auto w-full block hover:no-underline md:w-auto sm:text-sm block md:inline md:text-base font-light hover:bg-white hover:font-normal hover:text-green p-2 md:mr-4 md:mt-0">
                 Home
                 </AniLink>
-              <AniLink fade to="up" to="/wiki-link" activeClassName="bg-white text-green" className="w-full block md:w-auto sm:text-sm block md:inline md:text-base font-light no-underline hover:bg-white hover:text-green p-2 md:mr-4 ">
+              <AniLink fade to="up" to="/wiki-link" activeClassName="font-normal shadow bg-white text-green" className="w-full block hover:no-underline md:w-auto sm:text-sm block md:inline md:text-base font-light hover:bg-white hover:font-normal hover:text-green p-2 md:mr-4 ">
                 Mach mit!
                 </AniLink>
-              <AniLink fade to="/faq" activeClassName="bg-white text-green" className="w-full block md:w-auto sm:text-sm block md:inline md:text-base font-light no-underline hover:bg-white hover:text-green p-2 md:mr-4">
+              <AniLink fade to="/faq" activeClassName="font-normal shadow bg-white text-green" className="w-full block hover:no-underline md:w-auto sm:text-sm block md:inline md:text-base font-light hover:bg-white hover:font-normal hover:text-green p-2 md:mr-4">
                 FAQs
                 </AniLink>
-              <AniLink fade to="/about" activeClassName="bg-white text-green" className="w-full block md:w-auto sm:text-sm block md:inline md:text-base font-light no-underline hover:bg-white hover:text-green p-2 md:mr-4">
+              <AniLink fade to="/about" activeClassName="font-normal shadow bg-white text-green" className="w-full block hover:no-underline md:w-auto sm:text-sm block md:inline md:text-base font-light hover:bg-white hover:font-normal hover:text-green p-2 md:mr-4">
                 Über uns
                 </AniLink>
 
